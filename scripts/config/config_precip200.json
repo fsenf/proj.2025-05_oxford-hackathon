@@ -1,0 +1,7 @@
+{
+    "model": "icon-hamlite",
+    "experiment": "r2b9_lite_1224b",
+    "threshold": 200,
+    "threshold_target": "maximum",
+    "vname": "precip"
+}

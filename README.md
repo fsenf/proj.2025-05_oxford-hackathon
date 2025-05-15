@@ -2,7 +2,7 @@
 
 ## Workflow
 
-1. jupyternotebooks are developed in `nbooks`
+1. jupyter notebooks are developed in `nbooks`
 2. notebooks are converted with e.g. `juconvert nbooks/06-Linking-of-Individual-Features.ipynb`
 3. scripts are stored under `scripts` to make automated execution
 4. runners under `scripts/runner`: for parallel submission of python script into levante slurm
@@ -27,3 +27,11 @@ alias juconvert='jupyter nbconvert --to script --output-dir scripts/'
 ```bash
 > export PATH=/work/bb1376/tools/utils:$PATH
 ```
+
+## Known Issues
+
+1. periodic conditions ignored
+    - feature detection ignores spherical Earth (objects cut at dateline)
+    - tracking also ignores spherical Earther (no linking across dateline)
+
+2. only fixed threshold approaches working so far

@@ -141,8 +141,8 @@ for time, tr in tracks.groupby('time.day'):
     clist +=[ cset,]
     n += 1
 
-    if n > 10:
-        break
+#    if n > 10:
+#        break
 
 
 # In[14]:
@@ -200,7 +200,7 @@ PDF_daily.attrs['unit'] = '-'
 outfile = f'{outdir}/global_csd_{subname}_{date}.nc'
 
 
-# In[19]:
+# In[18]:
 
 
 out = xr.Dataset()
